@@ -7,3 +7,6 @@ class Product(models.Model):
     unit_price=models.DecimalField(max_digits=6,decimal_places=2)
     quantity=models.IntegerField()
     
+
+    def __str__(self) -> str:
+        return self.title
